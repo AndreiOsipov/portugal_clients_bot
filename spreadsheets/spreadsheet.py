@@ -24,6 +24,7 @@ class QueriesGoogleSheets:
         self._spreadsheet_id = SPREADSHEET_ID
         
     def write_data(self, data:list[str]):
+        print(f"data will be written: {data}")
         range_name = 'clients'  # Имя листа
         value_input_option = 'RAW'
         value_range_body = {
